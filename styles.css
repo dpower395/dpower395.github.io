@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1000px;
+  max-height: 34vh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Top gradient section */
+.gradient-bg {
+  height: 66vh; /* fills top 2/3 of screen */
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+  position: relative;
+  z-index: 1;
+}
+
+.intro {
+  position: relative;
+  top: -50vh;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.intro img {
+  width: 36vh;
+  height: 36vh;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.intro-text {
+  flex: 1;
+  padding: 0 2rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro-text h1 {
+  font-family: 'Poppins';
+  margin: 0;
+  font-weight: 550;
+  font-size: 3rem;
+}
+.intro-text p {
+  font-size: 1.2rem;
+  margin: 0 0 1.2rem;
+  color: #333;
+}
+.contact-list {
+  list-style: none;
+  padding-bottom: 0.5rem;
+}
+
+.contact-list li {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.contact-list i {
+  font-size: 1.2rem;
+  color: #7f7fd5;
+  margin-right: 0.5rem;
+  width: 1.2rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.socials a {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.intro-divider {
+  margin: 1rem 0;
+}
+
+/* Gray section below */
+.gray-bg {
+  background-color: #f1f1f1;
+  padding: 6rem 0 4rem;
+  position: relative;
+  z-index: 0;
+}
+
+.rates,
+.more-info {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.rates h2,
+.more-info h2 {
+  margin-bottom: 1rem;
+}
+
+.more-info ul {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.more-info blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #ccc;
+  color: #555;
+  font-style: italic;
+}
