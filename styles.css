@@ -3,17 +3,40 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: min(1.8vh, 1.8vw);
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background-color: #f8f8f8;
-  overflow-x: hidden;
 }
-.container {
-  max-width: 1000px;
-  max-height: 34vh;
-  margin: 0 auto;
-  padding: 2rem;
+
+/* Site navigation */
+.site-nav {
+  width: 100%;
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+
+.site-nav .container {
+  font-size: 1.1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: right;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: #005fa3;
 }
 
 /* Top gradient section */
@@ -26,7 +49,7 @@ body {
 
 .intro {
   position: relative;
-  top: -50vh;
+  top: -61vh;
   background: white;
   border-radius: 16px;
   padding: 2rem;
@@ -36,9 +59,16 @@ body {
   z-index: 2;
 }
 
+.intro-container {
+  max-width: 1000px;
+  max-height: 34vh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 .intro img {
-  width: 36vh;
-  height: 36vh;
+  width: 34vh;
+  height: 34vh;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -87,20 +117,46 @@ body {
   color: #0077cc;
 }
 
-.intro-divider {
-  margin: 1rem 0;
+/* About me section */
+.about-me hr {
+  margin-top: 1.6rem;
+}
+
+.about-me h1 {
+  font-family: 'Poppins';
+  margin-top: 1rem;
+  font-weight: 550;
+  font-size: 1.5rem;
+}
+
+.about-me p {
+  font-size: 1rem;
+  margin: 0.5rem 0 0 0;
 }
 
 /* Gray section below */
 .gray-bg {
   background-color: #f1f1f1;
-  padding: 6rem 0 4rem;
-  position: relative;
+  padding: 4rem 0 4rem;
   z-index: 0;
 }
 
-.rates,
-.more-info {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h2 {
+  margin-bottom: 1rem;
+}
+
+.container ul {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.rates, .subjects, .testimonials, .qualifications {
   background: white;
   padding: 2rem;
   border-radius: 16px;
@@ -108,17 +164,15 @@ body {
   margin-bottom: 2rem;
 }
 
-.rates h2,
-.more-info h2 {
-  margin-bottom: 1rem;
+.rates .contact-me {
+  padding-top: 1rem;
+}
+.rates i {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
-.more-info ul {
-  margin-left: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.more-info blockquote {
+.testimonials blockquote {
   margin: 1rem 0;
   padding-left: 1rem;
   border-left: 4px solid #ccc;
